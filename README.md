@@ -10,26 +10,13 @@ Toggle your MCP servers ON/OFF without manually editing JSON files.
 - **Dual config support** — Works with both global (`~/.config/opencode/`) and local (`./opencode.json`) configs
 - **Auto-refresh** — Detects external config changes automatically
 - **Command preview** — Shows the command used to run each MCP server
-- **Dark theme** — VS Code-inspired interface
+- **Light/Dark theme** — Switch between themes with one click
 
-## Screenshot
+## Screenshots
 
-```
-┌─────────────────────────────────────────┐
-│  MCP Servers                            │
-├─────────────────────────────────────────┤
-│  Global (~/.config/opencode)            │
-│                                         │
-│  github         [remote]         [ON ]  │
-│  → gh mcp-server                        │
-│                                         │
-│  Local (C:\Users\...\project)           │
-│                                         │
-│  blender        [local]          [OFF]  │
-│  → uvx blender-mcp                      │
-│                                         │
-└─────────────────────────────────────────┘
-```
+| Light Theme | Dark Theme |
+|-------------|------------|
+| ![Light Theme](screenshots/light.png) | ![Dark Theme](screenshots/dark.png) |
 
 ## Installation
 
@@ -89,12 +76,11 @@ This tool provides a GUI to toggle `"enabled": true/false` without editing JSON 
 
 MIT License - see [LICENSE](LICENSE)
 
-## Contributing
-
-Pull requests welcome! Ideas for future versions:
+## Roadmap
 
 - [ ] Add new MCP servers via GUI
 - [ ] Built-in MCP catalog (popular servers)
+- [ ] Rewrite in Rust (cross-platform, no dependencies)
 - [ ] System tray mode
 - [ ] Linux/macOS support
 
